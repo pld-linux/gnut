@@ -2,7 +2,7 @@ Summary:	Gnutella, a file sharing tool
 Summary(pl):	Gnutella - narzêdzie do wymiany plików
 Name:		gnut
 Version:	0.4.28
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://www.gnutelliums.com/linux_unix/gnut/tars/%{name}-%{version}.tar.gz
@@ -42,12 +42,12 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf README AUTHORS ChangeLog doc/TUTORIAL doc/*.html
+gzip -9nf README AUTHORS ChangeLog doc/TUTORIAL
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz doc/*.gz
+%doc *.gz doc/*.gz doc/*.html
 %attr(755,root,root) %{_bindir}/gnut
