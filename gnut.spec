@@ -1,4 +1,4 @@
-# $Revision: 1.1 $
+# $Revision: 1.2 $
 Summary:	Gnutella, a file sharing tool
 Name:		gnut
 Version:	0.3.29
@@ -34,7 +34,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 # gzip -9nf AUTHORS ChangeLog NEWS README TODO
-install README AUTHORS ChangeLog doc/TUTORIAL doc/*.html $RPM_BUILD_ROOT/{%_docdir}
+install README AUTHORS ChangeLog doc/TUTORIAL doc/*.html $RPM_BUILD_ROOT/%{_docdir}
 
 gzip -9nf README AUTHORS ChangeLog doc/TUTORIAL doc/*.html
 
