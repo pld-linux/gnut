@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://www.gnutelliums.com/linux_unix/gnut/tars/%{name}-%{version}.tar.gz
+# Source0-md5:	bade24c9838d390de41f5ea0c80dc22f
 URL:		http://www.gnutelliums.com/linux_unix/gnut/
 BuildRequires:	autoconf
 BuildRequires:	automake
