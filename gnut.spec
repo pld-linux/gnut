@@ -1,8 +1,8 @@
 Summary:	Gnutella, a file sharing tool
 Summary(pl):	Gnutella - narzêdzie do wymiany plików
 Name:		gnut
-Version:	0.4.21
-Release:	2
+Version:	0.4.22
+Release:	1
 License:	GPL
 Group:		Applications/Communications
 Group(de):	Applikationen/Kommunikation
