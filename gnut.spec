@@ -1,4 +1,4 @@
-# $Revision: 1.2 $
+# $Revision: 1.3 $
 Summary:	Gnutella, a file sharing tool
 Name:		gnut
 Version:	0.3.29
@@ -8,6 +8,7 @@ Group:		Applications/Communications
 Group(pl):	Aplikacje/Komunikacja
 Source0:	http://www.umr.edu/~jjp/%{name}-%{version}.tar.gz
 URL:		http://www.umr.edu/~jjp/
+BuildRequires:	readline-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -33,15 +34,12 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-# gzip -9nf AUTHORS ChangeLog NEWS README TODO
-install README AUTHORS ChangeLog doc/TUTORIAL doc/*.html $RPM_BUILD_ROOT/%{_docdir}
-
 gzip -9nf README AUTHORS ChangeLog doc/TUTORIAL doc/*.html
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%{_bindir}/gnut
 %defattr(644,root,root,755)
 %doc *.gz doc/*.gz
+%attr(755,root,root) %{_bindir}/gnut
