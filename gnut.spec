@@ -5,12 +5,6 @@ Version:	0.4.28
 Release:	1
 License:	GPL
 Group:		Applications/Communications
-Group(de):	Applikationen/Kommunikation
-Group(es):	Aplicaciones/Comunicaciones
-Group(fr):	Applications/Transmissions
-Group(pl):	Aplikacje/Komunikacja
-Group(pt):	Aplicações/Comunicações
-Group(ru):	ğÒÉÌÏÖÅÎÉÑ/ó×ÑÚØ
 Source0:	http://www.gnutelliums.com/linux_unix/gnut/tars/%{name}-%{version}.tar.gz
 URL:		http://www.gnutelliums.com/linux_unix/gnut/
 BuildRequires:	autoconf
