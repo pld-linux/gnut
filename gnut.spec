@@ -1,14 +1,16 @@
 Summary:	Gnutella, a file sharing tool
 Summary(pl):	Gnutella - narzêdzie do wymiany plików
 Name:		gnut
-Version:	0.4.19
+Version:	0.4.21
 Release:	1
 License:	GPL
 Group:		Applications/Communications
 Group(de):	Applikationen/Kommunikation
 Group(pl):	Aplikacje/Komunikacja
-Source0:	http://www.mrob.com/gnut/tars/%{name}-%{version}.tar.gz
-URL:		http://www.mrob.com/gnut/
+Source0:	http://www.gnutelliums.com/linux_unix/gnut/tars/%{name}-%{version}.tar.gz
+URL:		http://www.gnutelliums.com/linux_unix/gnut/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	readline-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -24,6 +26,9 @@ dzia³aj±cym w ¶rodowiskach ncurses.
 %setup -q
 
 %build
+aclocal -I macros
+autoconf
+automake -a -c
 %configure --disable-gtktest
 
 %{__make}
