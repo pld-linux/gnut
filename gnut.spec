@@ -1,12 +1,12 @@
-# $Revision: 1.5 $
+# $Revision: 1.6 $
 Summary:	Gnutella, a file sharing tool
 Name:		gnut
-Version:	0.4.13
+Version:	0.4.14
 Release:	1
 License:	GPL
 Group:		Applications/Communications
-Group(pl):	Aplikacje/Komunikacja
 Group(de):	Applikationen/Kommunikation
+Group(pl):	Aplikacje/Komunikacja
 Source0:	http://www.mrob.com/gnut/tars/%{name}-%{version}.tar.gz
 URL:		http://www.mrob.com/gnut/
 BuildRequires:	readline-devel
@@ -24,7 +24,6 @@ dzia³aj±cym w ¶rodowiskach ncurses.
 %setup -q
 
 %build
-LDFLAGS="-s"; export LDFLAGS
 %configure --disable-gtktest
 
 %{__make}
