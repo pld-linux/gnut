@@ -1,7 +1,7 @@
-# $Revision: 1.6 $
+# $Revision: 1.7 $
 Summary:	Gnutella, a file sharing tool
 Name:		gnut
-Version:	0.4.14
+Version:	0.4.15
 Release:	1
 License:	GPL
 Group:		Applications/Communications
