@@ -1,4 +1,3 @@
-# $Revision: 1.8 $
 Summary:	Gnutella, a file sharing tool
 Name:		gnut
 Version:	0.4.16
