@@ -25,9 +25,9 @@ dzia³aj±cym w ¶rodowiskach ncurses.
 
 %build
 aclocal -I macros
-autoconf
+%{__autoconf}
 rm -f missing
-automake -a -c -f
+%{__automake}
 %configure \
 	--disable-gtktest <<END
 
