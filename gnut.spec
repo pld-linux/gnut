@@ -24,9 +24,9 @@ dzia³aj±cym w ¶rodowiskach ncurses.
 %setup -q
 
 %build
-aclocal -I macros
-%{__autoconf}
 rm -f missing
+%{__aclocal} -I macros
+%{__autoconf}
 %{__automake}
 %configure \
 	--disable-gtktest <<END
@@ -42,12 +42,10 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf README AUTHORS ChangeLog doc/TUTORIAL
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz doc/*.gz doc/*.html
+%doc README AUTHORS ChangeLog doc/TUTORIAL doc/*.html
 %attr(755,root,root) %{_bindir}/gnut
