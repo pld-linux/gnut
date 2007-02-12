@@ -1,5 +1,5 @@
 Summary:	Gnutella, a file sharing tool
-Summary(pl):	Gnutella - narzêdzie do wymiany plików
+Summary(pl.UTF-8):   Gnutella - narzÄ™dzie do wymiany plikÃ³w
 Name:		gnut
 Version:	0.4.28
 Release:	2
@@ -17,9 +17,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Gnutella is a simple ncurses client for Gnutella file-sharing
 protocol.
 
-%description -l pl
-Gnutella jest prostym klientem protoko³u wymiany plików Gnutella,
-dzia³aj±cym w ¶rodowiskach ncurses.
+%description -l pl.UTF-8
+Gnutella jest prostym klientem protokoÅ‚u wymiany plikÃ³w Gnutella,
+dziaÅ‚ajÄ…cym w Å›rodowiskach ncurses.
 
 %prep
 %setup -q
