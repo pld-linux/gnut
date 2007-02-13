@@ -1,5 +1,5 @@
 Summary:	Gnutella, a file sharing tool
-Summary(pl.UTF-8):   Gnutella - narzędzie do wymiany plików
+Summary(pl.UTF-8):	Gnutella - narzędzie do wymiany plików
 Name:		gnut
 Version:	0.4.28
 Release:	2
